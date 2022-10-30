@@ -1,6 +1,0 @@
-import{e as i,g as d,a as v,b as p,u as n,r as C,o as E}from"./vendor.13910bdd.js";const k=i({setup(F){let l=d([{title:"\u8D2D\u7269",start:"2022-10-11 08:00",end:"2022-10-11 12:00",editable:!0},{title:"\u6572\u4EE3\u7801",start:"2022-10-12 10:00",end:"2022-10-12 16:00"}]),o=e=>{l.value.push({title:"\u5B66\u4E60",start:e.dateStr+" 12:00",end:e.dateStr+" 18:00"}),console.log("dateClick events: ",l)},a=e=>{console.log("eventClick info: ",e)},r=e=>{console.log("arg: ",e);let u=document.createElement("div"),t=e.timeText.split("-"),s=t[0].replace("\u4E0A\u5348","").replace("\u4E0B\u5348","").replace("\u65F6",""),c=t[1].replace("\u4E0A\u5348","").replace("\u4E0B\u5348","").replace("\u65F6","");return u.innerHTML=`
-    <img src='src/assets/logo.png' style='width:30px;height:30px'>
-    <div>\u5F00\u59CB\u65F6\u95F4\uFF1A${s}</div>
-    <div>\u7ED3\u675F\u65F6\u95F4\uFF1A${c}</div>
-    <div>\u6807\u9898\uFF1A${e.event._def.title}</div>
-  `,{domNodes:[u]}};return(e,u)=>{const t=C("v-calendar");return E(),v("div",null,[p(t,{events:n(l),displayEventEnd:"",onDateClick:n(o),onEventClick:n(a),eventContent:n(r)},null,8,["events","onDateClick","onEventClick","eventContent"])])}}});export{k as default};
